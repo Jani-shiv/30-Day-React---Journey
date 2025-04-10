@@ -75,11 +75,38 @@ Welcome to the funniest, most action-packed React.js roadmap you'll ever see. Bu
 
 ---
 
-## 🌈 Let’s Connect!
+## 🚀 Let's Connect & Grow Together
 
-- 📬 [My Portfolio](https://your-portfolio-link.com)
-- 🧠 [Follow on LinkedIn](https://www.linkedin.com/in/your-link/)
-- 🐙 [Star this Repo](https://github.com/your-github/repo-name)
+<div align="center">
+
+<a href="https://github.com/Jani-shiv" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/shiv-jani-56973a26b/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+&nbsp;
+<a href="https://www.instagram.com/jani._.712/" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+</a>
+
+</div>
+
+---
+
+## 🌟 Found this helpful?
+
+If you're enjoying this 30-Day React Journey and it’s helping you grow as a developer...
+
+<div align="center">
+
+### 👉 Give this repo a ⭐ [Here!](https://github.com/Jani-shiv/-30-Day-React---Journey?tab=readme-ov-file)  
+### 🔁 Share it with your fellow devs and learners!
+
+<img src="https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif" width="300" />
+
+</div>
 
 ---
 
