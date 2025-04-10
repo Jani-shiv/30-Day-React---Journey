@@ -1,0 +1,94 @@
+.day01-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background: #0f121a;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.hello-section {
+  margin-top: 1.5rem;
+}
+
+.hello-title {
+  font-size: 1.5rem;
+  color: #27ae60;
+}
+
+.hello-description {
+  color: #34495e;
+}
+
+.checklist-section {
+  margin-top: 2rem;
+}
+
+.checklist-header {
+  font-size: 1.3rem;
+  color: #2980b9;
+}
+
+.checklist-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.progress-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #ecf0f1;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  background: #3498db;
+  height: 10px;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+.progress-day {
+  font-size: 0.95rem;
+  color: #555;.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 8px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+    transition: width 0.4s ease-in-out;
+    border-radius: 8px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 5px #2193b0; }
+    50% { box-shadow: 0 0 15px #6dd5ed; }
+    100% { box-shadow: 0 0 5px #2193b0; }
+  }
+  
+}
