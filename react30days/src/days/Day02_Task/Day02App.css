@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Base container */
+  .app-container {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+    transition: all 0.4s ease;
+  }
+  
+  /* Themes */
+  .app-container.dark {
+    background-color: #111;
+    color: #eee;
+  }
+  
+  .app-container.light {
+    background-color: #f3f3f3;
+    color: #111;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: 2px solid currentColor;
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background-color: currentColor;
+    color: #fff;
+  }
+  
+  /* Card Grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Card Styles */
+  .greeting-card {
+    perspective: 1200px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .greeting-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    padding: 1.5rem;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Card Front */
+  .card-front {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: inherit;
+  }
+  
+  .card-front h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: inherit;
+  }
+  
+  .emoji {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .signature {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  
+  /* Card Back */
+  .card-back {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+  
+  .back-pattern {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

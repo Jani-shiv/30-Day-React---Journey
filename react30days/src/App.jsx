@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import Day01App from './days/Day01_Task/Day01App'
 import Day02App from './days/Day02_Task/Day02App'
 import Day03App from './days/Day03_Task/Day03App'
@@ -36,7 +35,7 @@ function App() {
 
   return (
     <>
-      <Day01App />
+      <Day02App />
     </>
   )
 }
