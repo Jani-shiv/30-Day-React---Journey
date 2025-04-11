@@ -26,7 +26,7 @@ I’m building **30 unique React.js projects** in 30 days to:
 
 | ✅ Day | Project                     | Preview                           | Code Link                     |
 |--------|-----------------------------|------------------------------------|-------------------------------|
-| 1      | Hello World React           | Basic JSX & Component Setup        | [`https://github.com/Jani-shiv/30-Day-React---Journey/tree/main/react30days/src/days/Day01_Task](./src/Day01App.jsx) |
+| 1      | Hello World React           | Basic JSX & Component Setup        | [`/src/Day01App.jsx`](./src/Day01App.jsx) |
 | 2      | Greeting Cards Gallery 🎴   | Cards with 3D flip & dark mode     | [`/src/Day02App.jsx`](./src/Day02App.jsx) |
 | 🔜 3   | Coming Soon...              | Stay Tuned!                        | ⏳                            |
 
