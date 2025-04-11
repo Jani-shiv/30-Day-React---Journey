@@ -114,9 +114,3 @@ If you're enjoying this 30-Day React Journey and it’s helping you grow as a de
 
 ---
 
-Let me know if you'd like this README file:
-- As a downloadable `.md`
-- With animated banners
-- With interactive preview using [GitHub Pages](https://pages.github.com/)
-
-Just say the word, Captain React 🫡⚛️
