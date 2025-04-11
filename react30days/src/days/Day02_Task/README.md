@@ -1,56 +1,70 @@
 # 🚀 30-Day React Journey by Shiv Jani
 
-> 🌟 One React project a day for 30 days — to master React the fun way!
+> 🔥 1 React Project Everyday | Day 2 - Greeting Cards Gallery
 
-[![React Badge](https://img.shields.io/badge/React-Learning-informational?style=flat&logo=react)](https://reactjs.org/)
-[![Profile Badge](https://img.shields.io/badge/Author-Shiv%20Jani-blueviolet)](https://www.linkedin.com/in/shiv-jani-56973a26b/)
-[![Instagram](https://img.shields.io/badge/Instagram-%40shivjanilifegrowthmentor-red)](https://www.instagram.com/shivjanilifegrowthmentor)
-
----
-
-## 🔥 Why This Challenge?
-
-I'm building **30 React mini-projects** from scratch to:
-- Sharpen frontend skills ⚛️
-- Build real-world UI components
-- Master animations, state, hooks, and API usage
-- Create a strong portfolio 💼
+[![React](https://img.shields.io/badge/React-Learning-informational?style=flat&logo=react)](https://reactjs.org/)
+[![Author](https://img.shields.io/badge/Author-Shiv%20Jani-blueviolet)](https://www.linkedin.com/in/shiv-jani-56973a26b/)
+[![Instagram](https://img.shields.io/badge/Instagram-%40jani._.712-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/jani._.712/)
 
 ---
 
-## 📅 Day-wise Projects
+## 🎯 Day 2: Greeting Cards Gallery 🎴
 
-| Day | Project Name              | Description                                      | Link                |
-|-----|---------------------------|--------------------------------------------------|---------------------|
-| ✅ Day 1 | React Hello World        | Basic JSX, first component                       | [`/Day01`](./src/Day01App.jsx) |
-| ✅ Day 2 | Digital Birthday Card    | Birthday-themed animated card UI                 | [`/Day02`](./src/Day02App.jsx) |
-| ✅ Day 3 | Greeting Cards Gallery   | 🎴 Card flip animations, themes, emoji, dark mode| [`/Day03`](./src/Day02App.jsx) |
-
-> 🔄 *More days coming soon...*
+A beautiful animated React greeting cards page with 3D flip effects, light/dark theme toggle, and decorative emoji UI — perfect for showcasing personalized messages with modern style ✨
 
 ---
 
-## 🎨 Day 3: Animated Greeting Cards Gallery
+## 🎨 Features
 
-![Greeting Cards Preview](https://github.com/Jani-shiv/-30-Day-React---Journey/assets/yourimageurl.gif)
+- 🎴 Stylish 3D flipping cards
+- 🌗 Dark & Light Theme support
+- 🎉 Messages for every occasion (Birthday, Congrats, Get Well, etc.)
+- 🎈 Floating emoji decorations
+- ✨ CSS animations and transitions
+- 📱 Fully responsive grid layout
 
-### ✨ Features
+---
 
-- 🎴 3D flipping greeting cards
-- 🌗 Light & Dark Theme toggle
-- 🎈 Multiple messages & emoji-based designs
-- 🖼️ Animated transitions with CSS
-- 📱 Fully responsive layout
+## 🖼️ Preview
 
-### 🚀 How to Run
+> Light Theme ☀️                | Dark Theme 🌙
+>------------------------------|-------------------------------
+> ![Light Preview](./preview-light.png) | ![Dark Preview](./preview-dark.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React.js** (with Vite)
+- 💅 **CSS3** (for animations, grid, flip effects)
+- 🌙 Theme Toggle (pure CSS + custom class switching)
+
+---
+
+## 🧪 How to Run It Locally
 
 ```bash
-# Clone the repo
-git clone https://github.com/Jani-shiv/-30-Day-React---Journey.git
-cd -30-Day-React---Journey
+# Step 1: Clone this repo
+git clone https://github.com/Jani-shiv/30-Day-React---Journey.git
 
-# Install dependencies
+# Step 2: Go to the project folder
+cd 30-Day-React---Journey
+
+# Step 3: Install dependencies
 npm install
 
-# Start the app
+# Step 4: Run the project
 npm run dev
+
+
+---
+
+### ✅ Next Steps for You:
+
+- Put this in your `README.md` file
+- Add `preview-light.png` and `preview-dark.png` in your project root
+- Push to GitHub:
+```bash
+git add README.md
+git commit -m "📝 Add Day 2 README with full details"
+git push origin main
