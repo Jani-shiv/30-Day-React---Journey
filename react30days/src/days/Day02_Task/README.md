@@ -53,8 +53,7 @@ I’m building **30 unique React.js projects** in 30 days to:
 
 | ☀️ Light Theme | 🌙 Dark Theme |
 |----------------|---------------|
-| *(light-preview.png)* | *(dark-preview.png)* |
-
+| ![Light Theme Preview](Light.png) | ![Dark Theme Preview](Dark.png) |
 ---
 
 ### 🛠️ Tech Stack
