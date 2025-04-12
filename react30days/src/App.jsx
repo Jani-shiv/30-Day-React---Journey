@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <Day02App />
+      <Day03App />
     </>
   )
 }

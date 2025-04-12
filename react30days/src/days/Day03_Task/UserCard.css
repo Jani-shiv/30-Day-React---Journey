@@ -1,0 +1,194 @@
+/* Updated with subtle, aesthetic lighting and animations */
+.user-card {
+  position: relative;
+  background: linear-gradient(145deg, #1c1f26, #232730);
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(255,255,255,0.05);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  perspective: 1500px;
+  backdrop-filter: blur(10px);
+  animation: cardEntry 1s ease-out forwards;
+  opacity: 0;
+}
+
+.user-card:hover {
+  transform: rotateY(5deg) rotateX(3deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 4px solid transparent;
+  background: linear-gradient(45deg, #a8b5c5, #627384) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  transform: translateZ(30px);
+  animation: floatAvatar 1.5s ease-out forwards 0.5s, bounce 3s ease-in-out infinite 2s;
+  opacity: 0;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #e0e6ed, #a8b5c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: translateZ(20px);
+  animation: slideIn 0.8s ease-out forwards 0.7s;
+  opacity: 0;
+}
+
+.role {
+  color: #a8b5c5;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: translateZ(15px);
+  animation: slideIn 0.8s ease-out forwards 0.9s;
+  opacity: 0;
+}
+
+.bio {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateZ(10px);
+  animation: fadeIn 0.8s ease-out forwards 1.1s;
+  opacity: 0;
+}
+
+.info p, .socials a {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  transform: translateZ(5px);
+  animation: fadeIn 0.8s ease-out forwards 1.3s;
+  opacity: 0;
+}
+
+.socials a {
+  color: #a8b5c5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: rgba(168, 181, 197, 0.1);
+  margin: 0 0.5rem;
+  display: inline-block;
+  animation: popIn 0.5s ease-out forwards calc(1.5s + var(--i, 0) * 0.1s);
+  opacity: 0;
+}
+
+.socials a:hover {
+  color: #ffffff;
+  background: rgba(168, 181, 197, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(168, 181, 197, 0.2);
+}
+
+.glow-border {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #a8b5c5, #627384, #8494a7, #a8b5c5);
+  z-index: -1;
+  filter: blur(15px);
+  animation: subtleGlow 4s ease-in-out infinite, softRotate 15s linear infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes cardEntry {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes floatAvatar {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) translateZ(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(30px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) translateZ(30px);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(30px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) translateZ(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateZ(20px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateZ(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(5px);
+  }
+}
+
+@keyframes subtleGlow {
+  0%, 100% {
+      opacity: 0.3;
+      transform: scale(0.99);
+  }
+  50% {
+      opacity: 0.5;
+      transform: scale(1);
+  }
+}
+
+@keyframes softRotate {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
