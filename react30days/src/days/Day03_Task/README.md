@@ -25,7 +25,6 @@ A fully animated, dynamic `UserCard` component system in React where:
 
 > ⚙️ Live Demo coming soon!  
 📂 Check the code in [`src/Day03`](./src/Day03)  
-📹 Output Video: [Watch Here](#) (link after upload)  
 
 ![Day 3 Banner](https://raw.githubusercontent.com/Jani-shiv/30-Day-React---Journey/main/public/day03-banner.png)
 
@@ -33,14 +32,13 @@ A fully animated, dynamic `UserCard` component system in React where:
 
 ### 👨‍💻 Featured Profiles:
 - 🚀 **Elon Musk** — Future Mars resident
-- 🍏 **Steve Jobs** — Visionary of design
 - 🌊 **Shiv Jani** — React Dev, Growth Mentor, and the creator of this journey 💙
 
 ---
 
 ### 📌 Connect with Me:
 - 🔗 [GitHub](https://github.com/Jani-shiv)
-- 💼 [LinkedIn](https://www.linkedin.com/in/shiv-jani-56973a26b/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/shiv-jani/)
 - 📸 [Instagram](https://www.instagram.com/jani._.712/)
 
 ---
