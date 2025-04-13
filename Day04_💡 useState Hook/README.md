@@ -64,7 +64,7 @@ A fun, **animated Counter App** using the **`useState`** hook in React where:
 > ⚙️ **Live Demo** coming soon!  
 📂 **Check the code** in [`src/Day04`](./src/Day04)
 
-![Day 4 Banner](https://raw.githubusercontent.com/Jani-shiv/30-Day-React---Journey/main/public/day04-banner.png)
+![Day 4 Banner](https://raw.githubusercontent.com/Jani-shiv/30-Day-React---Journey/main/Images/day04-banner.png)
 
 ---
 
