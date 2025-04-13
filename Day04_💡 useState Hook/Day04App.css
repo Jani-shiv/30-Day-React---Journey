@@ -1,0 +1,296 @@
+/* General Reset - Removes default margins, padding, and sets box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styles with font and color transitions */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* CSS Variables for dark theme (default) */
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --button-bg: #ff5858;
+  --button-hover-bg: #ff3b3b;
+  --input-bg: #333;
+  --input-text-color: #fff;
+  --task-bg: #333;
+  --completed-task-bg: #4caf50;
+  --completed-text-color: #fff;
+  --fade-in-duration: 1.5s;
+}
+
+/* CSS Variables for light theme */
+.light {
+  --background-color: #f0f0f0;
+  --text-color: #121212;
+  --button-bg: #00c6ff;
+  --button-hover-bg: #00a4cc;
+  --input-bg: #fff;
+  --input-text-color: #121212;
+  --task-bg: #f9f9f9;
+  --completed-task-bg: #4caf50;
+  --completed-text-color: #fff;
+}
+
+/* Main container styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Top section containing date, quote and emoji */
+.top-section {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Typography styles for date, quote and emoji */
+.date,
+.quote,
+.emoji-message {
+  font-size: 1.2rem;
+}
+
+/* Pulsing animation for emoji message */
+.emoji-message {
+  animation: pulse 1.5s infinite;
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  background-color: var(--button-bg);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Theme toggle hover effect */
+.theme-toggle:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Input group container styles */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Input field styles */
+.input-group input {
+  background-color: var(--input-bg);
+  color: var(--input-text-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Input group button styles */
+.input-group button {
+  background-color: var(--button-bg);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Input group button hover effect */
+.input-group button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Filter buttons container */
+.filter-group {
+  margin-top: 20px;
+}
+
+/* Filter button styles */
+.filter-group button {
+  background-color: #555;
+  color: white;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active filter button style */
+.filter-group button.active {
+  background-color: #00c6ff;
+}
+
+/* Filter button hover effect */
+.filter-group button:hover {
+  background-color: #777;
+}
+
+/* Task list container styles */
+.task-list {
+  margin-top: 20px;
+  list-style-type: none;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Individual task item styles */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--task-bg);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Completed task background */
+.task-item.completed {
+  background-color: var(--completed-task-bg);
+}
+
+/* Task text styles */
+.task-item .task-text {
+  cursor: pointer;
+}
+
+/* Completed task text styles */
+.task-item .task-text.completed {
+  text-decoration: line-through;
+  color: var(--completed-text-color);
+}
+
+/* Task item button styles */
+.task-item button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+/* Task item button hover effect */
+.task-item button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Edit button specific style */
+.task-item .edit-btn {
+  color: #ff3b3b;
+}
+
+/* Delete button specific style */
+.task-item .delete-btn {
+  color: #00c6ff;
+}
+
+/* Streak and tracker text styles */
+.tracker,
+.streak {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Streak counter specific styles */
+.streak {
+  font-weight: bold;
+  color: var(--button-bg);
+}
+
+/* Calendar container styles */
+.calendar-wrapper {
+  margin-top: 30px;
+}
+
+/* Calendar component styles */
+.react-calendar {
+  background-color: var(--task-bg);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar button styles */
+.react-calendar button {
+  background-color: var(--input-bg);
+  color: var(--input-text-color);
+}
+
+/* Calendar button hover effect */
+.react-calendar button:hover {
+  background-color: var(--button-bg);
+  color: #fff;
+}
+
+/* Chart container styles */
+.chart-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Chart title styles */
+.chart-wrapper h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Chart canvas styles */
+.chart-wrapper canvas {
+  border-radius: 10px;
+  background-color: var(--task-bg);
+}
+
+/* Confetti animation */
+@keyframes confetti-fall {
+  0% { top: -50px; }
+  100% { top: 100vh; }
+}
+
+/* Confetti particle styles */
+.confetti {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #ff5858;
+  border-radius: 50%;
+  animation: confetti-fall 3s infinite;
+}
+
+/* Fade in animation container */
+.fade-in {
+  animation: fadeIn var(--fade-in-duration) ease-in-out;
+}
+
+/* Keyframes for fade in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
