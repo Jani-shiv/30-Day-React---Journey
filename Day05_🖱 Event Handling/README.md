@@ -1,40 +1,91 @@
-# Day 05 Task
+# 🎮 **Day 5 – React Events Playground with Animations**
+## ✨ Day 5: Play with Mouse, Keyboard, Drag, Scroll & More!
 
-Summary of what you built today.
-# Day 5 - React.js Events Playground
+> 🚀 A fun and interactive **React Events Playground** that demonstrates how to handle different types of events like mouse clicks, keyboard presses, scrolling, form submission, drag & drop, and hover interactions. Each interaction is animated and theme-friendly! 🖱️⌨️🧩
 
-## Overview
+> ⚛️ Learn React by Building 30 Projects in 30 Days  
+> 📅 Challenge Start: 2025  
+> 📌 Author: [Shiv Jani](https://www.linkedin.com/in/shiv-jani-56973a26b/) | [Instagram](https://www.instagram.com/jani._.712/)
 
-This project is an interactive React.js application showcasing various React events such as mouse events, keyboard events, drag-and-drop events, and scroll events. The goal of this exercise is to explore the fundamental event handling in React while applying smooth animations, transitions, and building interactive UI components.
+---
 
-## Features
+![React](https://img.shields.io/badge/React-30--Day--Challenge-61dafb?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-Frontend-FDD835?style=for-the-badge&logo=vite)
+![License](https://img.shields.io/github/license/Jani-shiv/30-Day-React---Journey?style=for-the-badge)
 
-- **Left Section**: 
-  - **Click Event**: A button that increments the click count each time it's clicked.
-  - **Mouse Hover Event**: A box that changes content when hovered over.
-  
-- **Middle Section**: 
-  - **Key Press Event**: Displays the key pressed on the keyboard.
-  - **Scroll Event**: A scroll box that shows a message when scrolled.
-  - **Dark/Light Mode Toggle**: Switch between dark and light mode for the section's background.
+---
 
-- **Right Section**: 
-  - **Drag Event**: A draggable box that shows a dragging state.
-  - **Form Submission**: A form that submits the user input and displays the submitted message.
+## 📅 Day-wise Projects
 
-## Installation
+| ✅ Day | Project                     | Preview                           | Code Link                     |
+|--------|-----------------------------|------------------------------------|-------------------------------|
+| 1      | Hello World React           | Basic JSX & Component Setup        | [`/src/Day01App.jsx`](./src/Day01App.jsx) |
+| 2      | Greeting Cards Gallery 🎴   | Cards with 3D flip & dark mode     | [`/src/Day02App.jsx`](./src/Day02App.jsx) |
+| 3      | 🧩 Components & Props       | Animated Card                      | [`/src/Day03App.jsx`](./src/Day03App.jsx) |
+| 4      | Counter App 💡 useState Hook| Animated counter with buttons      | [`/src/Day04App.jsx`](./src/Day04App.jsx) |
+| 5      | React Events Playground 🎮  | Mouse, Key, Drag, Scroll Events    | [`/src/Day05App.jsx`](./src/Day05App.jsx) |
 
-### Prerequisites
+---
 
-Make sure you have the following installed:
+## ✨ **What I Built:**
 
-- **Node.js**: [Download and install Node.js](https://nodejs.org/)
+An awesome **Events Playground** that includes:
+- 🖱️ **Click & Hover** Event Interactions
+- ⌨️ **Key Press Detection**
+- 🧭 **Scroll-Based Event Effects**
+- 🔀 **Drag & Drop Mechanics**
+- 🌗 **Theme Toggle** for Light/Dark Modes
+- 🎨 **Smooth Animations & Transitions**
 
-- **npm**: npm comes bundled with Node.js, but if you need to install it separately, follow the [npm installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+---
 
-### Getting Started
+## 💡 **Key Highlights:**
 
-1. Clone the repository:
+### 🔹 Left Panel:
+- **Click Counter** – Increase count on button click
+- **Hover Zone** – Hover to reveal secret messages
 
-   ```bash
-   git clone https://github.com/yourusername/React-Events-Playground.git
+### 🔹 Middle Panel:
+- **Key Press Tracker** – Shows the key you're pressing
+- **Scroll Box** – Triggers event on scroll
+- **Theme Toggle** – Switch between light & dark effortlessly
+
+### 🔹 Right Panel:
+- **Draggable Box** – Click & drag with visual effects
+- **Form Input** – Submit and display user message
+
+---
+
+## 🧠 **Concepts Practiced:**
+
+- `onClick`, `onMouseEnter`, `onKeyDown`, `onScroll`, `onDragStart`, `onSubmit`
+- `useState` hook for reactive state management
+- Dynamic class changes based on user interaction
+- Custom animations & transitions using CSS
+- Responsive and modular React components
+
+---
+
+## 🧪 Preview:
+
+> 🔧 **Live Demo** coming soon!  
+📂 **Code Folder**: [`/src/Day05`](./src/Day05)
+
+![Day 5 Banner](https://raw.githubusercontent.com/Jani-shiv/30-Day-React---Journey/main/Images/day05-banner.png)
+
+---
+
+## 🔧 How to Run This Project
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Jani-shiv/30-Day-React---Journey.git
+
+# 2. Navigate to the project folder
+cd 30-Day-React---Journey
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
