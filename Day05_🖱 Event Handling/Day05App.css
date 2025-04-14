@@ -1,0 +1,235 @@
+/* AllEventsDemo.css */
+/* Root variables for color scheme */
+:root {
+  --light-bg: #f0f8ff;
+  --light-text: #1a1a1a;
+  --dark-bg: #121212;
+  --dark-text: #f5f5f5;
+
+  --primary: #4ade80;
+  --secondary: #38bdf8;
+  --hover: #facc15;
+  --dragging: #f472b6;
+}
+
+/* Reset default margin and set font family */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container styles */
+.event-container {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  outline: none;
+}
+
+/* Navigation styles */
+.event-container nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Navigation link styles */
+.event-container nav a {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation link hover effect */
+.event-container nav a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Section container styles */
+.left-section,
+.middle-section,
+.right-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme styles */
+.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+/* Dark theme styles */
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Title styles with animation */
+.title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+/* Button styles */
+.btn,
+.theme-btn,
+.submit-btn {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+/* Button hover effects */
+.btn:hover,
+.theme-btn:hover,
+.submit-btn:hover {
+  background-color: var(--hover);
+  transform: scale(1.05);
+}
+
+/* Hover box container styles */
+.hover-box {
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 2px dashed var(--secondary);
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover box active state */
+.hover-box.hovered {
+  background-color: var(--secondary);
+  color: #fff;
+  transform: scale(1.1) rotate(1deg);
+}
+
+/* Floating animation container */
+.floating-animation {
+  animation: float 3s ease-in-out infinite;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Keyboard event display container */
+.keyboard-box {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* Key display styles with animation */
+.key-display {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 8px;
+  display: inline-block;
+  animation: pulse 1s infinite;
+}
+
+/* Scroll container styles */
+.scroll-box {
+  margin: 1rem 0;
+  padding: 1rem;
+  max-height: 120px;
+  overflow-y: auto;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Scroll content styles */
+.scroll-content {
+  height: 150px;
+  line-height: 2;
+}
+
+/* Drag box container styles */
+.drag-box {
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 2px dotted var(--primary);
+  width: 150px;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.4s ease, transform 0.3s;
+  cursor: grab;
+}
+
+/* Drag box active state */
+.drag-box.dragging {
+  background-color: var(--dragging);
+  color: white;
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Form container styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Form input styles */
+.form-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Form input focus state */
+.form-input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Form submission message styles */
+.submitted-msg {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--secondary);
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in;
+}
+
+/* Animation keyframes */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); background-color: var(--primary); }
+  50% { transform: scale(1.05); background-color: var(--secondary); }
+}
