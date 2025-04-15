@@ -1,0 +1,193 @@
+/* Day06App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e101c;
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Container Styling */
+.container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #1c1f2b, #151722);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title & Texts */
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00ffe0;
+  margin-bottom: 1rem;
+}
+
+.greeting-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.optional {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.role-view {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #6ef0ff;
+}
+
+/* Form Inputs */
+.login-form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  background-color: #1a1c28;
+  color: #f5f5f5;
+  border: 1px solid #00ffe0;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-form input:focus {
+  border-color: #00ff99;
+  box-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+/* Captcha Box */
+.captcha-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1f2b;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px dashed #00ffe0;
+  border-radius: 8px;
+}
+
+.captcha-text {
+  font-weight: bold;
+  color: #00ffe0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* Refresh Icon */
+.refresh-btn {
+  background: none;
+  border: none;
+  color: #00ffe0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.refresh-btn:hover {
+  transform: rotate(90deg) scale(1.1);
+  color: #00ffcc;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #00ff99;
+  color: #0e101c;
+  padding: 0.7rem;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #00e6a3;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.login-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #ff4444;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e63d3d;
+  box-shadow: 0 0 10px #ff4444aa;
+}
+
+/* User Profile */
+.user-profile {
+  background: #1a1d27;
+  border: 1px solid #00ffe0;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  animation: fadeInProfile 0.5s ease-in;
+}
+
+@keyframes fadeInProfile {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.user-profile h3 {
+  margin-bottom: 0.5rem;
+  color: #00ffd5;
+}
+
+.user-profile p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d1faff;
+}
+
+/* Button Wrapper */
+.buttons {
+  margin-top: 1.5rem;
+  text-align: center;
+}
