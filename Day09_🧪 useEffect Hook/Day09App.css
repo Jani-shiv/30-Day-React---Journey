@@ -1,0 +1,156 @@
+/* ================= Theme ================= */
+:root {
+    --card-bg: #ffffff;
+    --text-color: #1a1a1a;
+    --bg-color: #f0f0f0;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+body.dark {
+    --card-bg: #1a1a1a;
+    --text-color: #ffffff;
+    --bg-color: #0a0a0a;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ================= Base Styles ================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.4s ease;
+}
+
+/* ================= Container ================= */
+.glass-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px var(--shadow-color);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform-style: preserve-3d;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+/* ================= Header ================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* ================= Theme Toggle Button ================= */
+.theme-toggle {
+    background: transparent;
+    border: 2px solid var(--text-color);
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.theme-toggle:hover {
+    background: var(--text-color);
+    color: var(--card-bg);
+}
+
+
+/* ================= General Button Styles ================= */
+.btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: var(--text-color);
+    color: var(--card-bg);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* ================= Quote Component ================= */
+.quote-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* ================= Loader Component ================= */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.loader-3d {
+    width: 60px;
+    height: 60px;
+    border: 6px solid transparent;
+    border-top: 6px solid var(--text-color);
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    box-shadow: inset 0 0 10px var(--text-color);
+    background: linear-gradient(145deg, var(--card-bg), #ccc1);
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateX(270deg) rotateY(270deg) rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+
+/* ================= Error Box ================= */
+.error-box {
+    background: rgba(255, 0, 0, 0.1);
+    border-left: 5px solid red;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+    transform: perspective(800px) rotateX(2deg);
+}
+
+.error-text {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
