@@ -1,14 +1,14 @@
-# 🚀 30-Day React.js Journey - From Hello World to Hero 💥
+# 🚀 10-Day React.js Journey - From Hello World to Hero 💥
 
 > _“React: Because regular HTML was just too boring.”_
 
 ![React Animation](https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif)
 
-Welcome to the funniest, most action-packed React.js roadmap you'll ever see. Buckle up, grab some popcorn 🍿, and let's dive into **30 Days of React Mastery** – LinkedIn style!
+Welcome to the funniest, most action-packed React.js roadmap you'll ever see. Buckle up, grab some popcorn 🍿, and let's dive into **10 Days of React Mastery** – LinkedIn style!
 
 ---
 
-## 🔰 Week 1: React Basics & Setup (aka Baby Steps 👶)
+## ALL TASK WITH LIST
 
 | Day | Topic | Task | Resource | Post Idea |
 |-----|-------|------|----------|-----------|
@@ -19,50 +19,9 @@ Welcome to the funniest, most action-packed React.js roadmap you'll ever see. Bu
 | 💥 Day 5 | 🖱 Event Handling | Like Button & Form Handler | [Events in React](https://reactjs.org/docs/handling-events.html) | “React is reacting to my clicks 😎” |
 | 🧠 Day 6 | 🤖 Conditional Rendering | Login/Logout Button | [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html) | “If this, then render that. Logic never looked cooler.” |
 | 🎉 Day 7 | 📜 Lists & Keys | Dynamic Task List with `.map()` | [Lists & Keys](https://reactjs.org/docs/lists-and-keys.html) | “.map() is my new BFF 💯” |
-
----
-
-## 🧠 Week 2: Hooks, Communication & Tiny Brains 🧬
-
-| Day | Topic | Task | Resource | Post Idea |
-|-----|-------|------|----------|-----------|
 | 🔄 Day 8 | 🧼 Lifting State Up | Toggle Switch App | [State Sharing](https://reactjs.org/docs/lifting-state-up.html) | “Data flows UP?! Mind blown 🤯” |
 | 🌍 Day 9 | 🧪 useEffect Hook | Fetch random quotes | [useEffect](https://reactjs.org/docs/hooks-effect.html) | “Side effects = superpowers 🔮” |
 | 📬 Day 10 | ✍ Forms & Controlled Inputs | Contact form with validation | [Forms](https://reactjs.org/docs/forms.html) | “Controlled forms = fewer bugs 🐞” |
-| ♻ Day 11 | 🧩 Component Composition | Testimonial Carousel | [Composition](https://reactjs.org/docs/composition-vs-inheritance.html) | “Components nesting like babushka dolls 🪆” |
-| 🧭 Day 12 | 🧭 React Router v6 | Multi-page Portfolio | [React Router](https://reactrouter.com/en/main) | “SPAs just got real! 📂” |
-| 🧙 Day 13 | 🧙 Custom Hooks | Create `useToggle()` Hook | [Custom Hooks](https://reactjs.org/docs/hooks-custom.html) | “I made my own Hook! 🔧” |
-| 📒 Day 14 | 📝 Mini Project 1 - Notes App | CRUD Notes App + Dark Mode | — | “Check out my Notes app – it remembers better than I do! 😅” |
-
----
-
-## 🎨 Week 3: Styling & Making Things Fancy 💃
-
-| Day | Topic | Task | Resource | Post Idea |
-|-----|-------|------|----------|-----------|
-| 🎨 Day 15 | 👗 Styling | Try Tailwind CSS & CSS Modules | [Tailwind Docs](https://tailwindcss.com/) | “Styled like a pro 💅” |
-| 📡 Day 16 | 📡 Axios + API | Fetch external data | [Axios](https://axios-http.com/) | “APIs talk, React listens 👂” |
-| 🧯 Day 17 | 🚨 Loaders & Error Handling | Add Spinners & Skeletons | — | “Even my errors look stylish now 😌” |
-| 🧃 Day 18 | 🌐 React Context API | Replace Prop Drilling | [Context API](https://reactjs.org/docs/context.html) | “Props? Never heard of her 😤” |
-| 🎬 Day 19 | 🎞 Framer Motion | Add Hover & Entry Animations | [Framer Motion](https://www.framer.com/motion/) | “Made my site dance 🕺” |
-| 🌦 Day 20 | ☁️ Mini Project 2 - Weather App | OpenWeatherMap API | [OpenWeatherMap](https://openweathermap.org/api) | “Forecast: 100% chance of React ☀” |
-| 🔍 Day 21 | 🔧 React DevTools | Optimize + Debug | [React DevTools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html) | “Spying on my components like Sherlock 🔍” |
-
----
-
-## 🧠 Week 4: Advanced Wizardry & Final Projects 🧙‍♂️
-
-| Day | Topic | Task | Resource | Post Idea |
-|-----|-------|------|----------|-----------|
-| 🔐 Day 22 | 🔐 Firebase Auth | Login/Signup System | [Firebase Docs](https://firebase.google.com/docs/web/setup) | “Authentication like a pro hacker 👨‍💻” |
-| 📦 Day 23 | 🧺 React Query | Handle API Caching | [TanStack Query](https://tanstack.com/query/v4) | “Querying made aesthetic 💅” |
-| 🚀 Day 24 | 🌍 Deploy to Vercel/Netlify | Publish a project | [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/) | “It’s LIVE! 🎉” |
-| 🧠 Day 25 | 🧠 Redux Toolkit | Global State Handling | [Redux Toolkit](https://redux-toolkit.js.org/) | “Reduxed like a boss 💪” |
-| 🧪 Day 26 | 🧪 Testing with Jest | Write Unit Tests | [Jest Docs](https://jestjs.io/docs/getting-started) | “Tested my code. It passed. I cried tears of joy 😭” |
-| 📱 Day 27 | 📱 Responsive Design | Add Media Queries | [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries) | “Mobile-first is my second nature 💻📱” |
-| 🌐 Day 28 | 🧑‍🎨 Build Portfolio | React Portfolio Site | — | “Started building my online temple 💼” |
-| 🛒 Day 29 | 🛍 Final Project - E-commerce UI | Product listing, cart UI, filters | — | “Feels like I just built mini Amazon 😍” |
-| 🏁 Day 30 | 🎓 Graduation Day | Wrap-up, Deploy, Reflect, Share | — | “#30DayReactJourney complete! Time to brag 🤓” |
 
 ---
 
